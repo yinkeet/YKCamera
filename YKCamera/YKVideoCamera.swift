@@ -27,7 +27,7 @@ open class YKVideoCamera: YKAbstractCamera, AVCaptureVideoDataOutputSampleBuffer
     }
 }
 
-open protocol YKVideoCameraDelegate: class {
+public protocol YKVideoCameraDelegate: class {
     func captureOutput(didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection)
     func captureOutput(didDrop sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection)
 }
