@@ -9,22 +9,12 @@
 import AVFoundation
 import UIKit
 
-public class YKPhotoCamera: NSObject {
+open class YKPhotoCamera: YKAbstractCamera {
     
-//    var captureSession: AVCaptureSession
-//
-//    var previewLayer: AVCaptureVideoPreviewLayer
-//
-//    override init() {
-//        self.captureSession = AVCaptureSession()
-//        self.previewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
-//        self.previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-//        self.previewLayer.connection?.videoOrientation = .portrait
-//    }
-    
-    public func test() -> Bool {
-        print("Hello world!")
-        return true
+    override func configureOutput() throws {
+        let captureOutput = AVCapturePhotoOutput()
+        captureOutput.setPreparedPhotoSettingsArray([AVCapturePhotoSettings(format: [AVVideoCodecKey : AVVideoCodecType.jpeg])], completionHandler: nil)
+        self.captureOutput = captureOutput
     }
     
 }

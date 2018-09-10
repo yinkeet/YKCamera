@@ -13,6 +13,15 @@
 		A48DCBE9213251D000DC748D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48DCBE8213251D000DC748D /* Nimble.framework */; };
 		A48DCBEB213251D000DC748D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48DCBEA213251D000DC748D /* Quick.framework */; };
 		A48DCBED2132542A00DC748D /* YKPhotoCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DCBEC2132542A00DC748D /* YKPhotoCamera.swift */; };
+		A48DCBF42132879500DC748D /* YKAbstractCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DCBF32132879500DC748D /* YKAbstractCamera.swift */; };
+		A48FC94B214611310034620B /* YKVideoCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48FC94A214611310034620B /* YKVideoCamera.swift */; };
+		A4D5A3172132EA3900E8D527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D5A3162132EA3900E8D527 /* AppDelegate.swift */; };
+		A4D5A3192132EA3900E8D527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D5A3182132EA3900E8D527 /* ViewController.swift */; };
+		A4D5A31C2132EA3900E8D527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D5A31A2132EA3900E8D527 /* Main.storyboard */; };
+		A4D5A31E2132EA3C00E8D527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D5A31D2132EA3C00E8D527 /* Assets.xcassets */; };
+		A4D5A3212132EA3C00E8D527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D5A31F2132EA3C00E8D527 /* LaunchScreen.storyboard */; };
+		A4D5A3262132EC2F00E8D527 /* YKCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48DCBC821324C4F00DC748D /* YKCamera.framework */; };
+		A4D5A3282132EDA700E8D527 /* YKCamera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A48DCBC821324C4F00DC748D /* YKCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +32,28 @@
 			remoteGlobalIDString = A48DCBC721324C4F00DC748D;
 			remoteInfo = YKCamera;
 		};
+		A4D5A3292132EDA700E8D527 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A48DCBBF21324C4F00DC748D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A48DCBC721324C4F00DC748D;
+			remoteInfo = YKCamera;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4D5A32B2132EDA800E8D527 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A4D5A3282132EDA700E8D527 /* YKCamera.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A48DCBC821324C4F00DC748D /* YKCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YKCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +67,15 @@
 		A48DCBE8213251D000DC748D /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48DCBEA213251D000DC748D /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48DCBEC2132542A00DC748D /* YKPhotoCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKPhotoCamera.swift; sourceTree = "<group>"; };
+		A48DCBF32132879500DC748D /* YKAbstractCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKAbstractCamera.swift; sourceTree = "<group>"; };
+		A48FC94A214611310034620B /* YKVideoCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKVideoCamera.swift; sourceTree = "<group>"; };
+		A4D5A3142132EA3900E8D527 /* YKCameraDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YKCameraDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D5A3162132EA3900E8D527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4D5A3182132EA3900E8D527 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4D5A31B2132EA3900E8D527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4D5A31D2132EA3C00E8D527 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4D5A3202132EA3C00E8D527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4D5A3222132EA3C00E8D527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +96,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4D5A3112132EA3900E8D527 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D5A3262132EC2F00E8D527 /* YKCamera.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +112,7 @@
 			children = (
 				A48DCBCA21324C4F00DC748D /* YKCamera */,
 				A48DCBD521324C4F00DC748D /* YKCameraTests */,
+				A4D5A3152132EA3900E8D527 /* YKCameraDemo */,
 				A48DCBC921324C4F00DC748D /* Products */,
 				A48DCBE32132519B00DC748D /* Frameworks */,
 			);
@@ -75,6 +123,7 @@
 			children = (
 				A48DCBC821324C4F00DC748D /* YKCamera.framework */,
 				A48DCBD121324C4F00DC748D /* YKCameraTests.xctest */,
+				A4D5A3142132EA3900E8D527 /* YKCameraDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +134,8 @@
 				A48DCBCB21324C4F00DC748D /* YKCamera.h */,
 				A48DCBCC21324C4F00DC748D /* Info.plist */,
 				A48DCBEC2132542A00DC748D /* YKPhotoCamera.swift */,
+				A48DCBF32132879500DC748D /* YKAbstractCamera.swift */,
+				A48FC94A214611310034620B /* YKVideoCamera.swift */,
 			);
 			path = YKCamera;
 			sourceTree = "<group>";
@@ -107,6 +158,19 @@
 				A48DCBE62132519B00DC748D /* Quick.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4D5A3152132EA3900E8D527 /* YKCameraDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A4D5A3162132EA3900E8D527 /* AppDelegate.swift */,
+				A4D5A3182132EA3900E8D527 /* ViewController.swift */,
+				A4D5A31A2132EA3900E8D527 /* Main.storyboard */,
+				A4D5A31D2132EA3C00E8D527 /* Assets.xcassets */,
+				A4D5A31F2132EA3C00E8D527 /* LaunchScreen.storyboard */,
+				A4D5A3222132EA3C00E8D527 /* Info.plist */,
+			);
+			path = YKCameraDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +223,25 @@
 			productReference = A48DCBD121324C4F00DC748D /* YKCameraTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A4D5A3132132EA3900E8D527 /* YKCameraDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4D5A3252132EA3C00E8D527 /* Build configuration list for PBXNativeTarget "YKCameraDemo" */;
+			buildPhases = (
+				A4D5A3102132EA3900E8D527 /* Sources */,
+				A4D5A3112132EA3900E8D527 /* Frameworks */,
+				A4D5A3122132EA3900E8D527 /* Resources */,
+				A4D5A32B2132EDA800E8D527 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4D5A32A2132EDA700E8D527 /* PBXTargetDependency */,
+			);
+			name = YKCameraDemo;
+			productName = YKCameraDemo;
+			productReference = A4D5A3142132EA3900E8D527 /* YKCameraDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,6 +259,9 @@
 					A48DCBD021324C4F00DC748D = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
+					A4D5A3132132EA3900E8D527 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 				};
 			};
 			buildConfigurationList = A48DCBC221324C4F00DC748D /* Build configuration list for PBXProject "YKCamera" */;
@@ -184,6 +270,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A48DCBBE21324C4F00DC748D;
 			productRefGroup = A48DCBC921324C4F00DC748D /* Products */;
@@ -192,6 +279,7 @@
 			targets = (
 				A48DCBC721324C4F00DC748D /* YKCamera */,
 				A48DCBD021324C4F00DC748D /* YKCameraTests */,
+				A4D5A3132132EA3900E8D527 /* YKCameraDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -211,6 +299,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4D5A3122132EA3900E8D527 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D5A3212132EA3C00E8D527 /* LaunchScreen.storyboard in Resources */,
+				A4D5A31E2132EA3C00E8D527 /* Assets.xcassets in Resources */,
+				A4D5A31C2132EA3900E8D527 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -218,6 +316,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48DCBF42132879500DC748D /* YKAbstractCamera.swift in Sources */,
+				A48FC94B214611310034620B /* YKVideoCamera.swift in Sources */,
 				A48DCBED2132542A00DC748D /* YKPhotoCamera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +330,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4D5A3102132EA3900E8D527 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D5A3192132EA3900E8D527 /* ViewController.swift in Sources */,
+				A4D5A3172132EA3900E8D527 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -238,7 +347,31 @@
 			target = A48DCBC721324C4F00DC748D /* YKCamera */;
 			targetProxy = A48DCBD321324C4F00DC748D /* PBXContainerItemProxy */;
 		};
+		A4D5A32A2132EDA700E8D527 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A48DCBC721324C4F00DC748D /* YKCamera */;
+			targetProxy = A4D5A3292132EDA700E8D527 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4D5A31A2132EA3900E8D527 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4D5A31B2132EA3900E8D527 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4D5A31F2132EA3C00E8D527 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4D5A3202132EA3C00E8D527 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A48DCBDA21324C4F00DC748D /* Debug */ = {
@@ -452,6 +585,44 @@
 			};
 			name = Release;
 		};
+		A4D5A3232132EA3C00E8D527 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BLBR3VSRUA;
+				INFOPLIST_FILE = YKCameraDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lancet.YKCameraDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4D5A3242132EA3C00E8D527 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BLBR3VSRUA;
+				INFOPLIST_FILE = YKCameraDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lancet.YKCameraDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -478,6 +649,15 @@
 			buildConfigurations = (
 				A48DCBE021324C4F00DC748D /* Debug */,
 				A48DCBE121324C4F00DC748D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4D5A3252132EA3C00E8D527 /* Build configuration list for PBXNativeTarget "YKCameraDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4D5A3232132EA3C00E8D527 /* Debug */,
+				A4D5A3242132EA3C00E8D527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
