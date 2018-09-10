@@ -11,7 +11,7 @@ import UIKit
 
 open class YKVideoCamera: YKAbstractCamera, AVCaptureVideoDataOutputSampleBufferDelegate {
     
-    weak var delegate: YKVideoCameraDelegate?
+    public weak var delegate: YKVideoCameraDelegate?
     
     override func configureOutput() throws {
         let captureOutput = AVCaptureVideoDataOutput()
