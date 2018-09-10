@@ -11,7 +11,7 @@ import UIKit
 
 open class YKVideoCamera: YKAbstractCamera, AVCaptureVideoDataOutputSampleBufferDelegate {
     
-    public weak var delegate: YKVideoCameraDelegate?
+    open weak var delegate: YKVideoCameraDelegate?
     
     override func configureOutput() throws {
         let captureOutput = AVCaptureVideoDataOutput()
@@ -27,7 +27,7 @@ open class YKVideoCamera: YKAbstractCamera, AVCaptureVideoDataOutputSampleBuffer
     }
 }
 
-public protocol YKVideoCameraDelegate: class {
+open protocol YKVideoCameraDelegate: class {
     func captureOutput(didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection)
     func captureOutput(didDrop sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection)
 }
