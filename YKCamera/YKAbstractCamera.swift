@@ -18,13 +18,11 @@ open class YKAbstractCamera: NSObject {
     var currentCaptureDeviceInput: AVCaptureDeviceInput?
     var captureOutput: AVCaptureOutput?
     
-    var previewLayer: AVCaptureVideoPreviewLayer
+    open private(set) var previewLayer: AVCaptureVideoPreviewLayer
     
     override public init() {
         self.captureSession = AVCaptureSession()
         self.previewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
-        self.previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-        self.previewLayer.connection?.videoOrientation = .portrait
     }
     
     func configureOutput() throws {

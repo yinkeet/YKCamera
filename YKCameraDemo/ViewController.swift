@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         camera.setViewFinder(on: self.view)
+        camera.previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         camera.start { (error) in
             if let error = error {
                 print(error)
