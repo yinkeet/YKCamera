@@ -129,7 +129,7 @@ extension YKAbstractCamera {
 
     public func setViewFinder(on view: UIView) {
         view.layer.insertSublayer(self.previewLayer, at: 0)
-        self.previewLayer.frame = view.frame
+        self.previewLayer.frame = view.bounds
     }
     
 }
